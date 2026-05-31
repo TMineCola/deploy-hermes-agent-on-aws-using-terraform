@@ -49,6 +49,12 @@ terraform apply
 - **Region**: Default ap-northeast-1 (Tokyo), configurable via variables
 - **Logging**: VPC Flow Logs v3 → S3 → Athena
 
+## ⚠️ Cost Warning
+
+> **Please choose your model carefully and be aware of token-related costs.**
+>
+> Large language models (especially Opus-tier) can incur significant per-token charges. Monitor your Amazon Bedrock usage and set billing alarms to avoid unexpected expenses. Consider switching to a lighter model (e.g., Sonnet or Haiku) for lower-cost scenarios.
+
 ## Security Features
 
 - Zero inbound rules on EC2 (Telegram Long Polling)

@@ -49,6 +49,12 @@ terraform apply
 - **部署區域**: 預設 ap-northeast-1 (東京)，可透過變數調整
 - **日誌**: VPC Flow Logs v3 → S3 → Athena
 
+## ⚠️ 費用提醒
+
+> **請謹慎選擇模型，並注意模型 Token 相關費用。**
+>
+> 大型語言模型（尤其是 Opus 等級）的 Token 費用可能相當高昂。請監控 Amazon Bedrock 用量並設定帳單警報，以避免產生非預期的費用。若使用情境對成本較敏感，可考慮改用較輕量的模型（如 Sonnet 或 Haiku）。
+
 ## Security Features
 
 - EC2 零入站規則 (Telegram 採取 Long Polling)
